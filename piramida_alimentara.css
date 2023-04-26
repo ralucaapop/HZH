@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+.bara{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 8vh;
+    background-color: brown;
+    position: fixed;
+    width: 100%; 
+    padding: 1rem 0 0.5rem 0;
+}
+@media screen and (max-width:450px){
+    .bara{
+       position: fixed;
+    }
+}
+.logo a{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 28px;
+    color:bisque;
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+    border:none;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    font-size:35px;
+    font-weight: bold;
+}
+.butoane{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size:15px;
+}
+.butoane a{
+    color:bisque;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;  
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    
+  }
+.dropbtn
+{
+    color:bisque;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:15px;
+    background-color: brown;
+    border: none;
+    outline: none;
+    
+   
+}
+.dropdown-content{
+    display: none;
+    padding-top: 0.75rem;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    background-color: brown;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: brown;
+    background-color: bisque;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+   
+}
+nav a:hover, .dropdown:hover .dropbtn{
+    
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(250, 181, 91);
+}
+  
+
+.butoane li{
+    list-style: none;
+    font-size: 15px;;
+}
+.meniuLogo{
+    display: none;
+    cursor: pointer;
+}
+.meniuLogo div{
+height:3px;
+width: 25px;
+margin: 5px;
+background-color: bisque;
+transition: all 0.3s ease;
+
+}
+
+
+@media screen and (max-width:1024px){
+    .butoane{
+       width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .butoane{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color: brown;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .butoane li{
+        opacity: 0;
+    }
+    .meniuLogo{
+        display: block;
+    }
+}
+.butoane-active{
+    transform: translateX(0%);
+}
+
+@keyframes butoaneFade{
+    form{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .linie1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .linie2{
+    opacity: 0;
+}
+  
+.toggle .linie3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/**/
+.bg{
+   
+    background-image: url("mancare2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%; 
+    width:100%;
+}
+
+.header-text{
+    text-align: center;
+    position: relative;
+    top: -80%;
+    width: 60%;
+    height: 0%;
+}
+
+.heading{
+    font-size: 70px;
+    color:#ffff;
+    text-transform: uppercase;
+    text-shadow:2px 1px rgb(100, 100, 99);
+    position: relative;
+}
+@media screen and (max-width:450px){
+    .heading{
+       font-size:40px;
+    }
+    
+}
+.header-paragraph{
+    font-size:35px;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    color:rgb(218, 218, 218);
+}
+.header-paragraph1{
+    font-size: 20px;
+    color:rgb(212, 219, 226);
+ 
+}
+.introducere{
+    padding:5rem 2rem 8rem 2rem;
+    background-color:rgb(250, 253, 253);
+}
+
+.poze{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 80px 0 50px 0 ;
+}
+.text{
+    font-size: 24px;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique ;
+}
+.poza1{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 2rem 5rem rgba(48, 41, 41, 0.678);
+    border-radius: 1rem;
+}
+@media screen and (max-width:450px){
+    .poza1{
+    width: 300px;
+    height: 230px;
+    }
+    
+}
+.poza2
+{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 2rem 5rem rgba(48, 41, 41, 0.678);
+    border-radius: 1rem;
+}
+
+@media screen and (max-width:450px){
+    .poza2{
+    width: 300px;
+    height: 230px;
+    }
+    
+}
+.trecere{
+    width: 100%;
+    height: 150px; 
+}
+.poza{
+    width: 100%;
+    height: 202px;
+}
+.p2{
+    display: flex;
+    padding: 0rem 10em 5rem 10rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.continut{
+    display: flex;
+    padding: 4rem 10em 5rem 10rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.titlu{
+    
+    font-size: 49px;
+    padding: 0 0 1rem 0;
+    color:rgb(109, 63, 20);
+    text-align:center;
+    font-family: Baskerville Old Face,serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 0 3rem 0;
+    font-size:3rem;
+    color: rgb(51, 37, 37);
+    text-align:center;
+    text-transform: uppercase;
+
+}
+
+@media screen and (max-width:450px){
+    .titlu{
+       font-size:40px;
+    }
+}
+.p1{
+    font-size: 28px;
+    text-align:center;
+    max-width: 550px;
+    font-family: Baskerville Old Face,serif;
+    border-style: double;
+    border-width:  thick;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem ;
+    background-image:url("boabe-cafea.jpg") ;
+    background-size: cover;
+    color:rgb(163, 118, 51);
+}
+
+
+.imagine{
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 2rem 5rem rgba(219, 186, 114, 0.952);
+}
+
+
+@media screen and (max-width:450px){
+    .imagine{
+       width:400px;
+       height:400px;
+    }}
+    
+.box{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    align-items: center;
+   
+    background-color: rgb(207, 137, 66);
+  
+}
+.stiaiCa{
+    padding: 2rem 0 2rem 0;
+}
+.stiaiCaImagine{
+    max-width: 160px;
+    border-radius: 15rem;
+}
+.stiaiCaText{
+    
+    text-align: center;
+    max-width: 650px;
+    font-size:25px;
+    color: blanchedalmond;
+}
+.tariProducatoare{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.tariProducatoareText{
+    margin:5rem 5rem 0 5rem;
+    font-size:18px;
+    max-width: 440px;
+    text-align: center;
+}
+.structura{
+    background-color: rgb(105, 67, 38);
+    margin-top: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+}
+.titluStructura{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5rem;
+    color: rgb(224, 214, 201);
+}
+
+@media screen and (max-width:450px){
+    .titluStructura{
+        font-size: 40px;
+    }
+}
+.structuraIntro{
+    padding: 3rem 10rem 3rem 10rem;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(224, 214, 201);
+    font-weight: bolder;
+}
+
+@media screen and (max-width:450px){
+    .structuraIntro{
+        padding: 3rem 1rem 3rem 1rem;
+    }
+}
+.el
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
+   
+}
+.nrCurentStructura{
+    max-width: 600px;
+    text-align: center;   
+}
+
+.nrCurentTitlu{
+    text-align: center  ;
+}
+.section{
+    background-color:rgb(224, 214, 201);
+    border-style:double;
+    border-width: thick; 
+    border-color: rgb(129, 93, 3);
+    padding:2rem 2rem 2rem 2rem; 
+}
+.insiruireOrizontala{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+ul.lista {
+    list-style-type: circle;
+}
+.cafeaNociva{
+    padding:3rem 8rem 3rem 8rem;
+   
+
+}
+.cafeaNocivaTitlu{
+    padding-bottom: 3rem;
+    text-align:center;
+}
+.cafeaNocivaPoze{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+.cafeaNocivaText{
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-style: double;
+    border-width:  thick;
+    padding: 2rem 0 2rem 0;
+    background-color:rgb(211, 209, 203);
+}
+
+.orizontala{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cafeaVerticala{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 4rem;
+}
+.cafeaVerticalaText{
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    max-width: 550px;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+}
+.cafeaVerticalaPoza{
+    max-width: 500px;
+}
+
+.cofeina{
+    padding: 5rem 5rem 5rem 5rem;
+   
+}
+.partea1Cofeina{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 8rem;
+}
+.introducereCofeina{
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+}
+.introducereCofeina1{
+    max-width: 550px;
+}
+.cofeinaTitlu{
+    
+    font-size: 72px;
+    text-transform: uppercase;
+}
+.cofeinaText{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.introducereCofeinaText{
+    font-size: 20px;
+    text-align: center;
+    color:ghostwhite;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    background-color: black;
+    box-shadow: 0 2rem 5rem rgba(48, 41, 41, 0.678);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.beneficiiCofeina{
+    background-image: url("backgroundCofeina.jpg");
+    padding: 1rem 0 2rem 0;
+    border-style: solid;
+    border-width: thick;
+}
+.beneficiiCofeinaTitlu{
+    padding: 0 0 2rem 0;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.orizontala{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.verticala{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.elemente{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+.elemente1{
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    text-align: center;
+}
+.textBeneficiu{
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+.floatImg{
+   position:relative;
+    max-width: 150px;
+    float: left;
+}
+
+
+.reguli{
+    padding: 3rem 0 3rem 3rem;
+    background-color: rgb(255, 255, 255);
+}
+.cofeinaFemeiInsarcinatePoza{
+    max-width: 70px;
+    padding-right: 14rem;
+    float:right;
+   
+}
+.reguliTitlu{
+    padding: 0 0 3rem 0;
+    font-size:3rem;
+    color: rgb(51, 37, 37);
+    text-align:center;
+    text-transform: uppercase;
+}
+.alineat{
+    color: rgb(51, 37, 37);
+    font-size:19px;
+    padding-left: 5rem;
+    
+    max-width: 900px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cofeinaAspecteNegative{
+    padding:2rem 3rem 3rem 3rem;
+}
+.cofeinaAspecteNegativeTitlu{
+    text-align: center;
+    font-size:50px;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    color: dimgray;
+}
+.cofeinaAspecteNegativeText{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:25px;
+    padding-bottom: 1rem;
+    color: dimgray;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.cofeinaAspecteNegativePoza{
+    max-width: 150px;
+}
+ul.lista1{
+    list-style-type: circle;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:25px;
+    color: dimgray;
+    font-weight: bolder;
+}
+.orizontalaCofeina{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.multaCofeina{
+    padding: 3rem 3rem 3rem 3rem;
+    background-color: darkgrey;
+
+}
+.multaCofeinaTitlu{
+    padding: 0 0 3rem 0;
+    font-size:3rem;
+    color: #ffff;
+    text-align:center;
+    text-transform: uppercase;
+}
+.multaCofeinaText{
+    color:#ffff;
+    font-size:19px;
+   
+    text-align: center;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.continutDeCofeinaTitlu{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-size:2.5rem;
+}
+.lista2{
+    list-style-type: circle;
+    font-size:18px;
+}
+.continutDeCofeinaPoza{
+    max-width: 400px;
+}
+.orizontalaContinutDeCofeina{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+@media screen and (max-width:450px){
+    table{
+        font-size:9px;
+    }
+}
+td, th {
+    border: 1px solid #bebebe;
+    text-align: left;
+    
+    text-align: center;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

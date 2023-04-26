@@ -1,0 +1,641 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 70%;
+}
+html{
+    height: 50%;
+}
+
+.bara{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 8vh;
+    background-color: brown;
+   position:fixed;
+    width: 100%; 
+    padding: 1rem 0 0.5rem 0;
+}
+@media screen and (max-width:450px){
+    .bara{
+       position: fixed;
+    }
+}
+
+.logo a{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 28px;
+    color:bisque;
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+    border:none;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    font-size:35px;
+    font-weight: bold;
+}
+.butoane{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size:15px;
+}
+.butoane a{
+    color:bisque;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;  
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    
+  }
+.dropbtn
+{
+    color:bisque;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:15px;
+    background-color: brown;
+    border: none;
+    outline: none;
+    
+   
+}
+.dropdown-content{
+    display: none;
+    padding-top: 0.75rem;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    background-color: brown;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: brown;
+    background-color: bisque;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+   
+}
+nav a:hover, .dropdown:hover .dropbtn{
+    
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(250, 181, 91);
+}
+  
+
+.butoane li{
+    list-style: none;
+    font-size: 15px;;
+}
+.meniuLogo{
+    display: none;
+    cursor: pointer;
+}
+.meniuLogo div{
+height:3px;
+width: 25px;
+margin: 5px;
+background-color: bisque;
+transition: all 0.3s ease;
+
+}
+
+
+@media screen and (max-width:1024px){
+    .butoane{
+       width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .butoane{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color: brown;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .butoane li{
+        opacity: 0;
+    }
+    .meniuLogo{
+        display: block;
+    }
+}
+.butoane-active{
+    transform: translateX(0%);
+}
+
+@keyframes butoaneFade{
+    form{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .linie1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .linie2{
+    opacity: 0;
+}
+  
+.toggle .linie3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*bara*/
+
+.fundal{
+  background-image: url("proteine_fundal.jpg");
+  height: 600px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textInceput{
+text-align: center;
+padding-top:7rem;
+
+}
+
+.titluProteine{
+    padding-top: 100px;
+    font-size: 70px;
+    color: #ffff;;
+    text-transform: uppercase;
+    text-shadow:2px 1px rgb(100, 100, 99);
+}
+
+.paragraf1{
+    font-size:40px;
+    padding-bottom: 1rem;
+    color:#ffff;
+    text-shadow:2px 1px rgb(100, 100, 99);
+}
+
+
+.introducere{
+    padding:3rem 0 8rem 0;
+    background-color:rgb(250, 253, 253);
+}
+
+.linie{
+    width: 100%;
+    height: 2rem;
+    background-color: black;
+}
+.text{
+    font-size: 24px;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique ;
+    padding: 0 12rem 0 12rem;
+}
+@media screen and (max-width:450px){
+    .text{
+        padding: 0 0 0 0;
+    }
+}
+.poze{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 80px 0 0 0 ;
+}
+
+.poza1{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 2rem 5rem rgba(48, 41, 41, 0.678);
+    border-radius: 1rem;
+}
+@media screen and (max-width:450px) {
+    .poza1{
+        width: 300px;
+        height: 250px;
+    }
+ }
+.poza2
+{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 2rem 5rem rgba(48, 41, 41, 0.678);
+    border-radius: 1rem;
+
+}
+@media screen and (max-width:450px) {
+    .poza2{
+        width: 300px;
+        height: 250px;
+    }
+ }
+ .box{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    align-items: center;
+   
+    background-color: rgb(196, 110, 40);
+  
+}
+.stiaiCaImagine{
+    max-width: 160px;
+    border-radius: 15rem;
+}
+.stiaiCaText{
+    
+    padding: 5px;
+    text-align: center;
+    max-width: 650px;
+    font-size:25px;
+    color: rgb(17, 11, 1);
+}
+.ceSunt{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-bottom:5rem ;
+    margin:4rem 3rem 0 5rem;
+ }
+.ceSuntText{
+    
+    max-width: 1000px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ceSuntA{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-bottom:3rem ;
+    margin:4rem 3rem 0 5rem;
+ }
+.ceSuntAText{
+    
+    max-width: 1000px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+.t1{
+    color: rgba(56, 22, 22, 0.863);
+    font-size:22px;
+}
+.ceSuntTitlu{
+    font-size: 50px;
+    color:black;
+    
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.ceSuntATitlu{
+    font-size: 50px;
+    color:black;
+    
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.exemple{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-bottom:5rem ;
+    margin:4rem 3rem 0 5rem;
+ }
+.exempleText{
+    
+    max-width: 10000px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+.exempleTitlu{
+    font-size: 40px;
+    color:rgb(161, 159, 8);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.harta{
+   
+    max-width: 600px;
+    height: 400px;
+    box-shadow: 0 2rem 3rem rgba(228, 228, 228, 0.911);
+    border-radius: 1rem;
+}
+@media screen and (max-width:450px){
+    .harta{
+        width: 300px;
+        height: auto;
+    }
+}
+
+.valoareNutritiva{
+    padding:3rem 8rem 3rem 8rem; 
+    background-color: rgba(19, 95, 50, 0.863);;
+}
+@media screen and (max-width:450px){
+    .valoareNutritiva{
+        padding: 3rem 0.5rem 3rem 0.5rem;
+    }
+}
+
+
+.valoareNutritivaTitlu{
+    padding-bottom: 2rem;
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+}
+.valoareNutritivaText{
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-style: double;
+    border-width:  thick;
+    padding: 2rem 0 2rem 0;
+    background-color: white;
+}
+
+.continutDeCofeina{
+    padding:3rem 8rem 3rem 8rem; 
+    
+}
+@media screen and (max-width:450px){
+    .continutDeCofeina{
+        padding: 3rem 0.5rem 3rem 0.5rem;
+    }
+}
+
+
+.continutDeCofeinaTitlu{
+    padding-bottom: 2rem;
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgba(19, 95, 50, 0.863);
+}
+.continutDeCofeinaText{
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-style: double;
+    border-width:  thick;
+    padding: 2rem 0 2rem 0;
+    background-color:rgba(19, 95, 50, 0.863);
+    color: white;
+}
+
+.proteineanimaleVSproteinevegetale{
+    padding-top: 5rem;
+}
+
+.continutproteineanimaleVSproteinevegetale{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0 3rem 0;
+}
+
+.proteineanimaleVSproteinevegetaleTitlu{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.proteineanimale{
+    max-width: 600px;
+    text-align: center;
+    padding-top: 2rem;
+    
+}
+.proteineanimaleTitlu{
+    
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.proteineanimaleText{
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+
+.proteinevegetale{
+    max-width: 490px;
+    text-align: center;
+    padding-top: 2rem;
+}
+.proteinevegetaleTitlu{
+    
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.proteinevegetaleText{
+    font-size: 20px;
+    padding-bottom: 1rem;
+} 
+.poza_proteine{
+   
+    
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 2rem 3rem rgba(228, 228, 228, 0.911);
+    border-radius: 1rem;
+    
+}
+@media screen and (max-width:450px){
+    .poza_proteine{
+        width: 300px;
+        height: auto;
+    }
+}
+
+.ceaiVerdeVsNegru{
+    padding: 3rem 0 4rem 0;
+    background-image: url("plantaCeai.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ceaiNegruVsVerdeTitlu{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 58px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.ceaiNegruVsVerdeText{
+    
+    display: flex;
+    padding: 2rem 10rem 5rem 10rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.p1{
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color:black;
+    font-size: 28px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.801);
+    padding: 3rem 1rem 3rem 1rem;
+    max-width: 680px;
+}
+.imagine{
+    height: 350px;
+    width: 350px;
+}
+
+.culoareCeai{
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.partea2{
+    max-width: 500px;
+    font-size: 20px;
+}
+.culoareCeaiTitlu{
+    font-size: 45px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.culoareCeaiText{
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+.culoareCeaiPoza{
+    max-width: 550px;
+    height: auto;
+}
+@media screen and (max-width:450px){
+    .culoareCeaiPoza{
+       max-width: 300px;
+    }
+}
+.buline{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.culoareCeaiTitlu{
+    text-align: center;
+}
+.trecere{
+    width: 100%;
+    height: 150px; 
+}
+.poza{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.beneficii{
+    background-image: url("fundalBeneficii.jpg");
+    padding-top: 1rem;
+}
+.titluBeneficii{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5rem;
+    color: bisque;
+}
+@media screen and (max-width:450px){
+    .titluBeneficii{
+       font-size: 30px;
+    }
+}
+.beneficiiIntro{
+   text-align: center;
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(252, 210, 160);
+    font-weight: bolder;
+    padding: 1rem 0 1rem 0;
+}
+
+.el
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0 2rem 0;
+   
+}
+.nrCurentBeneficiu{
+    max-width: 600px;
+    text-align: center;   
+}
+.nrCurentBeneficiu1{
+    max-width: 800px;
+    text-align: center;   
+}
+.nrCurentTitlu{
+    text-align: center;
+}
+.section{
+    background-color: blanchedalmond;
+    border-style:double;
+    border-width: thick; 
+    border-color: goldenrod;
+    padding:2rem 3rem 2rem 3rem; 
+}
+.insiruireOrizontala{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+.bara{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 8vh;
+    background-color: brown;
+    position: fixed;
+    width: 100%; 
+    padding: 1rem 0 0.5rem 0;
+}
+
+.logo a{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 28px;
+    color:bisque;
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+    border:none;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    font-size:35px;
+    font-weight: bold;
+}
+.butoane{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size:15px;
+}
+.butoane a{
+    color:bisque;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;  
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    
+  }
+.dropbtn
+{
+    color:bisque;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:15px;
+    background-color: brown;
+    border: none;
+    outline: none;
+    
+   
+}
+.dropdown-content{
+    display: none;
+    padding-top: 0.75rem;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    background-color: brown;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: brown;
+    background-color: bisque;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+   
+}
+nav a:hover, .dropdown:hover .dropbtn{
+    
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(250, 181, 91);
+}
+  
+
+.butoane li{
+    list-style: none;
+    font-size: 15px;;
+}
+.meniuLogo{
+    display: none;
+    cursor: pointer;
+}
+.meniuLogo div{
+height:3px;
+width: 25px;
+margin: 5px;
+background-color: bisque;
+transition: all 0.3s ease;
+
+}
+
+
+@media screen and (max-width:1024px){
+    .butoane{
+       width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .butoane{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color: brown;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .butoane li{
+        opacity: 0;
+    }
+    .meniuLogo{
+        display: block;
+    }
+}
+.butoane-active{
+    transform: translateX(0%);
+}
+
+@keyframes butoaneFade{
+    form{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .linie1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .linie2{
+    opacity: 0;
+}
+  
+.toggle .linie3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/**/
+
+.fundal{
+   
+    background-image: url("ABCimagine.jpg");
+    height: 100%; 
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlu{
+    font-size: 70px;
+    color:rgb(12, 11, 11);
+    text-transform: uppercase;
+    text-shadow:2px 1px rgb(100, 100, 99);
+    letter-spacing: 2px;
+
+}
+@media screen and (max-width:450px){
+    .titlu{
+        font-size: 30px;
+    }
+}
+
+.textInceput{
+    font-size:25px;
+    padding-bottom: 1rem;
+    color:rgb(255, 247, 247);
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 400px;
+    padding-right: 5rem;
+    font-weight: bolder;
+}
+.cateLichide{
+    padding: 3rem 3rem 3rem 3rem;
+}
+.cateLichideText{
+    font-size:22px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-style: double;
+    border-width:  20px;
+    box-shadow: 7px 10px black;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color:rgb(185, 185, 185);
+}
+
+.cateLichideText2{
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+.cateLichideText1:hover{
+    font-size:25px;
+}
+/*aricole*/
+
+.paginaCuArticole{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ 
+.articol{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    max-width: 650px;
+    padding-top:3rem;
+}
+
+
+.nume{
+    font-size: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:450px){
+    .nume{
+        font-size: 30px;
+    }
+}
+
+.detalii{
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;
+}
+.data{
+    padding-right: 2rem;
+}
+.liniuta{
+    height: 3px;
+    width: 35px;
+    background-color: black;
+    padding-right: 2rem;
+}
+.imagineArticol{
+    padding-bottom: 1.5rem;
+    
+}
+.autor{
+    padding-left: 2rem;
+}
+
+.numeArticol a{
+    font-size:38px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+.numeArticol a:hover{
+    color:darkgrey;
+    font-size:40px ;
+}
+/*buton*/
+.maiMultBtn a{
+    border-radius: 4px;
+    background-color:black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    max-width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.maiMultBtn{
+    border-radius: 4px;
+    background-color:black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    max-width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.maiMultBtn span a{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.maiMultBtn span :after{
+    content: '\00bb';
+    
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.maiMultBtn:hover span a {
+    padding-right: 25px;
+}
+.maiMultBtn:hover span a:after {
+    opacity: 1;
+    right: 0;
+}
+/*final buton*/
+
+.linieVerticala{
+    height: 600px;
+    margin-top: 2rem;
+    width: 5px;
+    background-color: darkgrey;  
+}
+.articoleRecente{
+    display: flex;
+    flex-direction: column; 
+}
+.articolRecent{
+    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.articoleRecenteTitlu{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding: 3rem 0 3rem 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.articolRecentTitlu a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size:35px;
+    
+}
+.articolRecentTitlu {
+    font-weight: bolder;
+   
+}
+.articolRecentData{
+    font-size: 18px;
+}
+.liniuta1{
+    height: 2px;
+    width: 15px;
+    background-color: black;
+    padding-right: 2rem;
+}
+.articolRecentData{
+    font-weight: bolder;
+}
+
+@media screen and (max-width:650px){
+    .articol{
+       width: 400px;
+    }
+    
+    .linieVerticala{
+        visibility: hidden;
+        position:absolute;
+    }
+    .articoleRecente{
+        visibility: hidden;
+        position:absolute;
+    }
+}
+@media screen and (max-width:450px){
+    .articol{
+       width: 300px;
+    }
+    
+    .linieVerticala{
+        visibility: hidden;
+        position:absolute;
+    }
+    .articoleRecente{
+        visibility: hidden;
+        position:absolute;
+    }
+}
